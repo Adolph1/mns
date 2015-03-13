@@ -16,6 +16,21 @@ return [
             'class' => 'funson86\blog\Module',
             'controllerNamespace' => 'funson86\blog\controllers\backend'
         ],
+		 'Customers' => [
+            'class' => 'backend\modules\Customers\Customers',
+        ],
+          'Accounts' => [
+            'class' => 'backend\modules\Accounts\Accounts',
+        ],
+          'LoansDeposits' => [
+            'class' => 'backend\modules\LoansDeposits\LoansDeposits',
+        ],
+          'SaccossParameters' => [
+            'class' => 'backend\modules\SaccossParameters\SaccossParameters',
+        ],
+         'Settings' => [
+            'class' => 'backend\modules\Settings\Settings',
+        ],
     ],
     'components' => [
         'user' => [
@@ -23,7 +38,7 @@ return [
             'enableAutoLogin' => true,
         ],
         'urlManager' => [
-            'enablePrettyUrl' => true,
+            'enablePrettyUrl' => false,
             'showScriptName' => false,
             //'enableStrictParsing' => true,
             'rules' => [

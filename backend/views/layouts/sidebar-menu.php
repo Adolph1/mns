@@ -55,6 +55,27 @@ echo Menu::widget(
                     ],
                 ],
             ],
+             [
+                'label' => Yii::t('app', 'Customers'),
+                'url' => ['#'],
+                'icon' => 'fa fa-cog',
+                'options' => [
+                    'class' => 'treeview',
+                ],
+                'items' => [
+                    [
+                        'label' => Yii::t('app', 'Details'),
+                        'url' => ['/Customers/customer'],
+                        'icon' => 'fa fa-user',
+                        //'visible' => (Yii::$app->user->identity->username == 'admin'),
+                    ],
+                    [
+                        'label' => Yii::t('app', 'Category'),
+                        'url' => ['/Customers/category'],
+                        'icon' => 'fa fa-lock',
+                    ],
+                ],
+            ],
         ]
     ]
 );

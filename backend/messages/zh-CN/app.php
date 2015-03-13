@@ -71,7 +71,8 @@ return [
     'Catalog' => '分类',
     'Post' => '文章',
     'Comment' => '评论',
-    'Tag' => '标签',
+    'Tag' => '标签'
+
 
 
 ];
